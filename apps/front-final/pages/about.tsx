@@ -1,6 +1,7 @@
-import styles from './index.module.css';
 import Link from "next/link";
-export function Index() {
+import styles from './index.module.css';
+
+export function About() {
   /*
    * Replace the elements below with your own.
    *
@@ -8,10 +9,9 @@ export function Index() {
    */
   return (
     <div className={styles.page}>
-      <h2>Hola mundo</h2>
-      <Link href="/about"> About  </Link>
+      <h2>Final front- about</h2>
     </div>
   );
 }
 
-export default Index;
+export default About;
