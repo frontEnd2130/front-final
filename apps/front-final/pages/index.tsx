@@ -1,5 +1,7 @@
 import styles from './index.module.css';
 import Link from "next/link";
+import {Ui} from "@front-workspace/ui"
+import Countries from "./../app/countries/countries"
 export function Index() {
   /*
    * Replace the elements below with your own.
@@ -8,8 +10,9 @@ export function Index() {
    */
   return (
     <div className={styles.page}>
-      <h2>Hola mundo</h2>
+      <Ui title = "hola" showTitle/>
       <Link href="/about"> About  </Link>
+      <Countries/>
     </div>
   );
 }
