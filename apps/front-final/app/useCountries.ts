@@ -3,12 +3,12 @@ import { request, gql } from 'graphql-request'
 
 
 
-const apiKey = "";//we need an api key here....
+const apiKey = process.env.API_KEY;//we need an api key here....
 export const testApi= async () => {
    try {
         console.log("****TESTING API****");
-       // console.log(process.env.REACT_APP_API_KEY);
-        const response = await fetch(`https://app.sportdataapi.com/api/v1/soccer/countries/?apikey=${apiKey}`, {
+        const request = `https://app.sportdataapi.com/api/v1/soccer/countries/?apikey=${apiKey}`;
+        const response = await fetch(request, {
             method: "GET",
            
         });
@@ -27,7 +27,6 @@ export const useCountries = () => {
     useEffect(()=>{
         testApi()
         .then((response)=> {
-            console.log(response.data[0]);
             setCountries(response.data);
         }).catch((err)=>{
             console.log(err);

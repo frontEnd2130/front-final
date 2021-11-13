@@ -6,8 +6,8 @@ export interface CountriesProps {}
 
 export function Countries(props: CountriesProps) {
  const [countries] = useCountries();
-  //const countries =[];
-  //console.log(process.env.REACT_APP_API_KEY);
+ // const countries =[];
+  //console.log(process.env.API_KEY);
  /* testApi().then((res)=>{
     console.log(res.data)
   });*/
