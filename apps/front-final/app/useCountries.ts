@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import { request, gql } from 'graphql-request'
 
 
 
 const apiKey = process.env.API_KEY;//we need an api key here....
-export const testApi= async () => {
+const getCountries= async () => {
    try {
         console.log("****TESTING API****");
         const request = `https://app.sportdataapi.com/api/v1/soccer/countries/?apikey=${apiKey}`;
@@ -25,7 +24,7 @@ export const testApi= async () => {
 export const useCountries = () => {
     const [countries, setCountries] = useState([]);
     useEffect(()=>{
-        testApi()
+        getCountries()
         .then((response)=> {
             setCountries(response.data);
         }).catch((err)=>{
