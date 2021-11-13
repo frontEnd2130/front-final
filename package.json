@@ -9,7 +9,7 @@
   },
   "private": true,
   "dependencies": {
-    "@nrwl/next": "13.1.4",
+    "@nrwl/next": "^13.1.4",
     "core-js": "^3.6.5",
     "next": "12.0.0",
     "react": "17.0.2",
@@ -18,7 +18,7 @@
     "tslib": "^2.0.0"
   },
   "devDependencies": {
-    "@nrwl/cli": "13.1.4",
+    "@nrwl/cli": "^13.1.4",
     "@nrwl/cypress": "13.1.4",
     "@nrwl/eslint-plugin-nx": "13.1.4",
     "@nrwl/jest": "13.1.4",
