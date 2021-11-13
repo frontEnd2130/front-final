@@ -10,6 +10,9 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
+  env: {
+    API_KEY: process.env.REACT_APP_API_KEY,
+  },
 };
 
 module.exports = withNx(nextConfig);
