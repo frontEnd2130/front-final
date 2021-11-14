@@ -126,3 +126,8 @@
   width: 16px;
   margin-right: 4px;
 }
+
+.background-image {
+  margin: 0; 
+  background-image: url("../public/Images/fondoSabanaFutbol.jpg");
+}
