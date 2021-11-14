@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from './index.module.css';
 import Countries from "./../app/countries/countries"
 
+
 export function Countrie() {
   /*
    * Replace the elements below with your own.
@@ -9,6 +10,7 @@ export function Countrie() {
    * Note: The corresponding styles are in the ./index.css file.
    */
   return (
+
     <div className={styles.page}>
       <Countries/>
     </div>

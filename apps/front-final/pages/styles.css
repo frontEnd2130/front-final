@@ -127,7 +127,8 @@
   margin-right: 4px;
 }
 
-.background-image {
-  margin: 0; 
-  background-image: url("../public/Images/fondoSabanaFutbol.jpg");
+.image-size {
+  width: 100px;
+  height: 100px;
 }
+
