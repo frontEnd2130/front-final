@@ -3,7 +3,7 @@ import Link from "next/link";
 import imagenDefault from "../../public/Images/fondoSabanaFutbol.jpg";
 import "bootstrap/dist/css/bootstrap.min.css"
 import Image from 'next/image'
-import {useCountries,testApi} from '../useCountries'
+import {useCountries} from '../useCountries'
 
 /* eslint-disable-next-line */
 export interface CountriesProps {}
