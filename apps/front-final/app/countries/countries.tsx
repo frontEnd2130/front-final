@@ -11,11 +11,6 @@ export interface CountriesProps {}
 
 export function Countries(props: CountriesProps) {
  const [countries] = useCountries();
- // const countries =[];
-  //console.log(process.env.API_KEY);
- /* testApi().then((res)=>{
-    console.log(res.data)
-  });*/
   return (
     <div>
       <div className="row e justify-content-center align-items-center ">
