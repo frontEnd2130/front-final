@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from './index.module.css';
-import Countries from "./../app/countries/countries"
+import Teams from './../app/teams/teams';
 
 export function Team() {
   /*
@@ -10,7 +10,7 @@ export function Team() {
    */
   return (
     <div className={styles.page}>
-      
+      <Teams/>
     </div>
   );
 }
