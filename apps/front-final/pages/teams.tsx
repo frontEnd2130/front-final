@@ -1,8 +1,14 @@
 import Link from "next/link";
 import styles from './index.module.css';
 import Teams from './../app/teams/teams';
+import { useRouter } from 'next/router'
 
-export function Team() {
+
+
+
+export  function Team() {
+  const router = useRouter();
+  const { country_id } = router.query;
   /*
    * Replace the elements below with your own.
    *
@@ -10,7 +16,7 @@ export function Team() {
    */
   return (
     <div className={styles.page}>
-      <Teams/>
+      <Teams country_id = {country_id.toString()} />
     </div>
   );
 }

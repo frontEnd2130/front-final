@@ -39,7 +39,10 @@ export function Countries(props: CountriesProps) {
                     <h4 className="card-title">{name}</h4>
                     <p className="card-text">Continente: {continent}</p>
                     <div className="d-grid gap-2 mb-4 " key={country_id}>
-                      <Link href="/teams">
+                      <Link href={{pathname: "/teams",
+                                  query:{
+                                    country_id
+                                  }}}>
                         <button
                           type="button"
                           className="btn btn-primary btn-lg btn-block">
