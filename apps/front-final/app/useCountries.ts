@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 const apiKey = process.env.API_KEY;//we need an api key here....
 const getCountries= async () => {
    try {
-        console.log("****TESTING API****");
         const request = `https://app.sportdataapi.com/api/v1/soccer/countries/?apikey=${apiKey}`;
         const response = await fetch(request, {
             method: "GET",

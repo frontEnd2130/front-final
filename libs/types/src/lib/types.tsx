@@ -4,3 +4,6 @@ export interface UiProps {
 
 }
 
+export interface TeamsProps {
+  country_id: string;
+}

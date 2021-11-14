@@ -1,16 +1,11 @@
 import './teams.module.css';
 import { useTeams, getTeams } from '../useTeams';
-import React from 'react';
-import Link from 'next/link';
+import { TeamsProps } from '@front-workspace/types';
 /* eslint-disable-next-line */
-export interface TeamsProps {
-  country_id: string;
-}
 
 export function Teams(props: TeamsProps) {
   const { country_id } = props;
   const [teams] = useTeams(country_id);
-  console.log(teams);
   /* getTeams(country_id)
     .then((response) => {
       console.log(response);
