@@ -7,6 +7,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Welcome to front-final!</title>
+        <link rel="shortcut icon" href="../public/Images/logo-futbol.ico" />
       </Head>
       <div className="app">
         <main>

@@ -19,31 +19,33 @@ export function Teams(props: TeamsProps) {
     });*/
   return (
     <div>
-      <nav>
-        <ul>
-          <div className="d-grid gap-2 mb-4">
-            <Link href="/countries">
-              <button type="button" className="btn btn-primary btn-lg btn-block">
-                Show countries
-              </button>
-            </Link>
-          </div>
-        </ul>
-      </nav>
-      
-      <div className="row e justify-content-center align-items-center ">
-        <div className="col-auto p-3 block-center">
-          <div className="text-center image-size">
-            <Link href="/index">
-              <Image src={logo} className="img-responsive" />
-            </Link>
+
+      <header>
+        <nav>
+          <ul>
+            <div className="d-grid gap-2 mb-4">
+              <Link href="/countries">
+                <button type="button" className="btn btn-primary btn-lg btn-block">
+                  Show countries
+                </button>
+              </Link>
+            </div>
+          </ul>
+        </nav>
+        <div className="row e justify-content-center align-items-center ">
+          <div className="col-auto p-3 block-center">
+            <div className="text-center image-size">
+              <Link href="/index">
+                <Image src={logo} className="img-responsive" />
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
+        <h1>Welcome to Teams!</h1>
 
-      <h1>Welcome to Teams!</h1>
+        <h2> Total data: {teams.length} teams</h2>
+      </header>
 
-      <h2> Total data: {teams.length} teams</h2>
       <nav>
         <ul>
           {teams && teams.length > 0 ? (
