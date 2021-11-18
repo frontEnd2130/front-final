@@ -12,6 +12,7 @@ export function Index() {
    */
   return (
     <div className={styles.page}>
+      <header>
       <div className="row e justify-content-center align-items-center ">
         <div className="col-auto p-3 block-center">
           <div className="text-center image-size">
@@ -22,6 +23,7 @@ export function Index() {
         </div>
       </div>
       <Ui title="Sabana Futbol" showTitle />
+      </header>
       <nav>
         <ul>
           <div className="d-grid gap-2 mb-4">
