@@ -33,7 +33,7 @@ export function Countries(props: CountriesProps) {
                 <div className="card">
                   <img
                     src={`https://flagcdn.com/w2560/${country_code}.png`}
-                    alt=""
+                    alt="" 
                   />
                   <div className="card-body">
                     <h4 className="card-title">{name}</h4>
