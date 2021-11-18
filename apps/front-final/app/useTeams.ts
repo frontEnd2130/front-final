@@ -24,7 +24,7 @@ export const useTeams = (country_id:string) => {
     useEffect(()=>{
         getTeams(country_id)
         .then((response)=> {
-            //console.log(response);
+            console.log(response);
             setTeams(response.data);
         }).catch((err)=>{
             console.log(err);

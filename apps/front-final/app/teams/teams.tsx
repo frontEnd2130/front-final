@@ -29,7 +29,7 @@ export function Teams(props: TeamsProps) {
       </div>
 
       <h1>Welcome to Teams!</h1>
-
+      {/* <h2> Total data: {teams.length} teams</h2> */}
       {teams && teams.length > 0 ? (
         teams.map(
           ({ team_id, name, short_code, logo }) =>
