@@ -9,7 +9,7 @@ import Image from 'next/image';
 export function Teams(props: TeamsProps) {
   const { country_id } = props;
   const [teams] = useTeams(country_id);
-  const filteredTeams = teams.filter((element) => {
+  const filteredTeams = teams?.filter((element) => {
     return element.short_code;
   });
   const logo = '/Images/logoFutbol.png';
@@ -47,7 +47,7 @@ export function Teams(props: TeamsProps) {
         </div>
         <h1>Welcome to Teams!</h1>
 
-        <h2> Total data: {filteredTeams.length} teams</h2>
+        <h2> Total data: {filteredTeams ? filteredTeams.length : 0} teams</h2>
       </header>
 
       <nav>

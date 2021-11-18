@@ -10,7 +10,7 @@ export interface CountriesProps {}
 
 export function Countries(props: CountriesProps) {
   const [countries] = useCountries();
-  const filteredCountries = countries.filter((element) => {
+  const filteredCountries = countries?.filter((element) => {
     return element.country_code;
   });
   const logo = '/Images/logoFutbol.png';
@@ -33,7 +33,11 @@ export function Countries(props: CountriesProps) {
           </div>
         </div>
         <h1>Welcome to Countries!</h1>
-        <h2> Total data: {filteredCountries.length} countries</h2>
+        <h2>
+          {' '}
+          Total data: {filteredCountries ? filteredCountries.length : 0}{' '}
+          countries
+        </h2>
       </header>
 
       <nav>
