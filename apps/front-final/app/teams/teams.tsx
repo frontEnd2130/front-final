@@ -45,19 +45,6 @@ export function Teams(props: TeamsProps) {
                   </div>
                 </div>
               </div>
-              // <div className="container mb-4">
-              //   <div className="card">
-              //     <div className="card-body">
-              //       <div className="text-center image-size">
-              //         <img src={logo} alt="" />
-              //       </div>
-
-              //       <h4 className="card-title">{name}</h4>
-              //       <p className="card-text">Short code: {short_code}</p>
-              //       <div className="d-grid gap-2 mb-4 " key={team_id}></div>
-              //     </div>
-              //   </div>
-              // </div>
             )
         )
       ) : (
