@@ -3,7 +3,7 @@ import styles from './index.module.css';
 import Countries from "./../app/countries/countries"
 
 
-export function Countrie() {
+export function Country() {
   /*
    * Replace the elements below with your own.
    *
@@ -17,4 +17,4 @@ export function Countrie() {
   );
 }
 
-export default Countrie;
+export default Country;

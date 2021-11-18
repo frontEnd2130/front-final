@@ -19,10 +19,16 @@ test('renders image', () => {
  ).toBeTruthy();
 });
 
-
 test('renders Button', () => {
   render(<Index />);
   expect(
-    screen.getByRole('button')
+    screen.getByRole('button', { name: /show countries/i })
+  ).toBeTruthy();
+ });
+
+ test('renders Title', () => {
+  render(<Index />);
+  expect(
+    screen.getByRole('heading', { name: /sabana futbol/i })
   ).toBeTruthy();
  });

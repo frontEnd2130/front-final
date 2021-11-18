@@ -6,7 +6,6 @@ import { useRouter } from 'next/router';
 export function Team() {
   const router = useRouter();
   const { country_id } = router.query;
-  console.log(country_id);
   if (!country_id) {
     return <h2>Loading</h2>;
   }

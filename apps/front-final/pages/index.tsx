@@ -10,6 +10,7 @@ export function Index() {
    *
    * Note: The corresponding styles are in the ./index.css file.
    */
+  const logo="/Images/logoFutbol.png"; 
   return (
     <div className={styles.page}>
       <header>
@@ -17,7 +18,7 @@ export function Index() {
         <div className="col-auto p-3 block-center">
           <div className="text-center image-size">
             <Link href="/index">
-              <img src="/Images/logo futbol.png" className="img-responsive" width="128" height="128"/>
+              <img src={logo} className="img-responsive" width="128" height="128"/>
             </Link>
           </div>
         </div>
