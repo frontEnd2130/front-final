@@ -1,6 +1,9 @@
 import './teams.module.css';
+import logo from '../../public/Images/logo futbol.png';
 import { useTeams, getTeams } from '../useTeams';
 import { TeamsProps } from '@front-workspace/types';
+import Link from 'next/link';
+import Image from 'next/image';
 /* eslint-disable-next-line */
 
 export function Teams(props: TeamsProps) {
@@ -17,7 +20,11 @@ export function Teams(props: TeamsProps) {
     <div>
       <div className="row e justify-content-center align-items-center ">
         <div className="col-auto p-3 block-center">
-          <div className="text-center image-size"></div>
+          <div className="text-center image-size">
+            <Link href="/index">
+              <Image src={logo} className="img-responsive" />
+            </Link>
+          </div>
         </div>
       </div>
 
