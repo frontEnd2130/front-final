@@ -75,6 +75,12 @@ For this case it would be: `ng e2e front-final`
 
 Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
 
+## Env File
+
+In order to run this program properly, an API KEY must be set through environment variables.
+
+You can create your .env file with this parameter : `REACT_APP_API_KEY="API_KEY"` in this way, The program will automatically detect the API_KEY from the .env file.
+
 ## Understand your workspace
 
 Run `nx dep-graph` to see a diagram of the dependencies of your projects.
