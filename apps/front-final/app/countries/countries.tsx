@@ -11,6 +11,7 @@ export interface CountriesProps {}
 
 export function Countries(props: CountriesProps) {
   const [countries] = useCountries();
+  
   return (
     <div>
       <div className="row e justify-content-center align-items-center ">
@@ -24,7 +25,7 @@ export function Countries(props: CountriesProps) {
       </div>
 
       <h1>Welcome to Countries!</h1>
-      <h2> Total data: {countries.length} countries</h2>
+      <h2> Total data: {countries.length-8} countries</h2>
       {countries && countries.length > 0 ? (
         countries.map(
           ({ country_id, name, country_code, continent }) =>
@@ -36,7 +37,7 @@ export function Countries(props: CountriesProps) {
                     alt="" 
                   />
                   <div className="card-body">
-                    <h4 className="card-title">{name}</h4>
+                    <h4 className="card-title">{country_id}-{name}</h4>
                     <p className="card-text">Continent: {continent}</p>
                     <div className="d-grid gap-2 mb-4 " key={country_id}>
                       <Link href={{pathname: "/teams",
