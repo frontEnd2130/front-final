@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Ui } from '@front-workspace/ui';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image from 'next/image';
-import logo from '../public/Images/logo futbol.png';
+//import logo from '/logo futbol.png';
 export function Index() {
   /*
    * Replace the elements below with your own.
@@ -16,7 +16,7 @@ export function Index() {
         <div className="col-auto p-3 block-center">
           <div className="text-center image-size">
             <Link href="/index">
-              <Image src={logo} className="img-responsive" />
+              <img src="/Images/logo futbol.png" className="img-responsive" width="128" height="128"/>
             </Link>
           </div>
         </div>
