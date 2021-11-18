@@ -1,5 +1,6 @@
-.text-subtitle {
-    font-style: italic;
-    text-align: center;
-    font-size: 15px;
+.container {
+    
+  }
+.container__list{
+list-style-type: none;
 }
