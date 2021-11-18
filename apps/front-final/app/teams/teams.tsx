@@ -19,6 +19,18 @@ export function Teams(props: TeamsProps) {
     });*/
   return (
     <div>
+      <nav>
+        <ul>
+          <div className="d-grid gap-2 mb-4">
+            <Link href="/countries">
+              <button type="button" className="btn btn-primary btn-lg btn-block">
+                Show countries
+              </button>
+            </Link>
+          </div>
+        </ul>
+      </nav>
+      
       <div className="row e justify-content-center align-items-center ">
         <div className="col-auto p-3 block-center">
           <div className="text-center image-size">
@@ -30,34 +42,40 @@ export function Teams(props: TeamsProps) {
       </div>
 
       <h1>Welcome to Teams!</h1>
+
       <h2> Total data: {teams.length} teams</h2>
-      {teams && teams.length > 0 ? (
-        teams.map(
-          ({ team_id, name, short_code, logo }) =>
-            short_code && (
-              <div className="container mb-4 ">
-                <div className="card">
-                  <div className="row e justify-content-center align-items-center ">
-                    <div className="col-auto p-3 block-center">
-                      <div className="text-center logo-size ">
-                          <img src={logo} alt="" className="logo-size"/>
+      <nav>
+        <ul>
+          {teams && teams.length > 0 ? (
+            teams.map(
+              ({ team_id, name, short_code, logo }) =>
+                short_code && (
+                  <div className="container mb-4 ">
+                    <div className="card">
+                      <div className="row e justify-content-center align-items-center ">
+                        <div className="col-auto p-3 block-center">
+                          <div className="text-center logo-size ">
+                              <img src={logo} alt="" className="logo-size"/>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <div className="card-body">
+                        <h4 className="card-title text-center">{name}</h4>
+                        <p className="card-text">Short code: {short_code}</p>
+                        <div className="d-grid gap-2 mb-4 " key={country_id}>
+                        </div>
                       </div>
                     </div>
                   </div>
-                
-                  <div className="card-body">
-                    <h4 className="card-title">{name}</h4>
-                    <p className="card-text">Short code: {short_code}</p>
-                    <div className="d-grid gap-2 mb-4 " key={country_id}>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                )
             )
-        )
-      ) : (
-        <p>no data</p>
-      )}
+          ) : (
+            <p>no data</p>
+          )}
+        </ul>
+      </nav>
+      
     </div>
   );
 }
