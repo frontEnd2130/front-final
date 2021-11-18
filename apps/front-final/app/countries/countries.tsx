@@ -14,18 +14,20 @@ export function Countries(props: CountriesProps) {
   
   return (
     <div>
-      <div className="row e justify-content-center align-items-center ">
-        <div className="col-auto p-3 block-center">
-          <div className="text-center image-size">
-            <Link href="/index">
-              <Image src={logo} className="img-responsive" />
-            </Link>
+      <header>
+        <div className="row e justify-content-center align-items-center ">
+          <div className="col-auto p-3 block-center">
+            <div className="text-center image-size">
+              <Link href="/index">
+                <Image src={logo} className="img-responsive" />
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-
-      <h1>Welcome to Countries!</h1>
-      <h2> Total data: {countries.length-8} countries</h2>
+        <h1>Welcome to Countries!</h1>
+        <h2> Total data: {countries.length-8} countries</h2>
+      </header>
+      
       <nav>
         <ul>
           {countries && countries.length > 0 ? (
