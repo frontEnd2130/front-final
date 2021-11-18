@@ -26,39 +26,44 @@ export function Countries(props: CountriesProps) {
 
       <h1>Welcome to Countries!</h1>
       <h2> Total data: {countries.length-8} countries</h2>
-      {countries && countries.length > 0 ? (
-        countries.map(
-          ({ country_id, name, country_code, continent }) =>
-            country_code && (
-              <div className="container mb-4">
-                <div className="card">
-                  <img
-                    src={`https://flagcdn.com/w2560/${country_code}.png`}
-                    alt="" 
-                  />
-                  <div className="card-body">
-                    <h4 className="card-title">{country_id}-{name}</h4>
-                    <p className="card-text">Continent: {continent}</p>
-                    <div className="d-grid gap-2 mb-4 " key={country_id}>
-                      <Link href={{pathname: "/teams",
-                                  query:{
-                                    country_id
-                                  }}}>
-                        <button
-                          type="button"
-                          className="btn btn-primary btn-lg btn-block">
-                          Teams
-                        </button>
-                      </Link>
+      <nav>
+        <ul>
+          {countries && countries.length > 0 ? (
+            countries.map(
+              ({ country_id, name, country_code, continent }) =>
+                country_code && (
+                  <div className="container mb-4">
+                    <div className="card">
+                      <img
+                        src={`https://flagcdn.com/w2560/${country_code}.png`}
+                        alt="" 
+                      />
+                      <div className="card-body">
+                        <h4 className="card-title">{country_id}-{name}</h4>
+                        <p className="card-text">Continent: {continent}</p>
+                        <div className="d-grid gap-2 mb-4 " key={country_id}>
+                          <Link href={{pathname: "/teams",
+                                      query:{
+                                        country_id
+                                      }}}>
+                            <button
+                              type="button"
+                              className="btn btn-primary btn-lg btn-block">
+                              Teams
+                            </button>
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
+                )
             )
-        )
-      ) : (
-        <p>no data</p>
-      )}
+          ) : (
+            <p>no data</p>
+          )}
+        </ul>
+      </nav>
+      
     </div>
   );
 }
