@@ -2,6 +2,7 @@ import './teams.module.css';
 import logo from '../../public/Images/logo futbol.png';
 import { useTeams, getTeams } from '../useTeams';
 import { TeamsProps } from '@front-workspace/types';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from 'next/link';
 import Image from 'next/image';
 /* eslint-disable-next-line */
