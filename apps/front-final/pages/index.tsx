@@ -14,7 +14,7 @@ export function Index() {
   return (
    
      
-      <Ui title="Sabana Futbol" showTitle />
+      <Ui  />
      
       
    

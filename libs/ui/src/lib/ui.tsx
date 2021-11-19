@@ -4,8 +4,7 @@ import Link from 'next/link';
 
 /* eslint-disable-next-line */
 
-export function Ui(props: UiProps) {
-  const {title,showTitle} = props;
+export function Ui() {
   const logo="/Images/logoFutbol.png"; 
   return (
     <div>
@@ -21,7 +20,7 @@ export function Ui(props: UiProps) {
         </div>
       </div>
     </div>
-    <h1> {showTitle && title}</h1> 
+    <h1> Sabana Futbol</h1> 
     </header>
     <nav>
       <ul>
