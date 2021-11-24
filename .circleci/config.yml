@@ -4,13 +4,13 @@ orbs:
 jobs:
   test:
     docker:
-      - image: 'circleci/node:17.1.0-browsers'
+      - image: 'circleci/node:16.13.0-browsers'
     steps:
       - checkout
       - run: npm install && npm run test front-final
   build:
     docker:
-      - image: 'circleci/node:12.9.1-browsers'
+      - image: 'circleci/node:16.13.0-browsers'
     steps:
       - checkout
       - run: npm install && npm run build --prod
