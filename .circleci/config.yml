@@ -7,7 +7,7 @@ jobs:
       - image: 'circleci/node:12.9.1-browsers'
     steps:
       - checkout
-      - run: npm install && nx test front-final
+      - run: npm install && npm run test front-final
   build:
     docker:
       - image: 'circleci/node:12.9.1-browsers'
