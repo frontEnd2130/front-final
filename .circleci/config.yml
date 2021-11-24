@@ -25,7 +25,7 @@ jobs:
                 - ~/.npm
                 - ~/.cache
               key: v1-dependencies-{{ checksum "package.json" }}
-      - run: npm build
+      - run: npm run build --prod
       - aws-s3/sync:
           from: build
           to: "s3://ci-cd-fed-sabanafutbol/"
