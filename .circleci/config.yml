@@ -28,7 +28,7 @@ jobs:
               key: v1-dependencies-{{ checksum "package.json" }}
       - run: npm run build --prod
       - aws-s3/sync:
-          from: build
+          from: dist
           to: "s3://ci-cd-fed-sabanafutbol/"
           arguments: |
             --acl public-read \
