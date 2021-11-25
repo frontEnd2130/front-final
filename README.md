@@ -1,12 +1,26 @@
 
-
 # FrontWorkspace
-
 This project was generated using [Nx](https://nx.dev).
+
 
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
 
 🔎 **Smart, Extensible Build Framework**
+
+## CircleCI
+Project has continuous integration thanks to circleCI
+
+## Deployment
+Project was deployed using [Vercel](https://vercel.com).
+
+Click [here](https://sabana-futbol-v2.vercel.app) to access the deployed application on vercel.
+
+## Running unit tests
+
+Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
+For this case it would be: `nx test front-final`
+
+
 
 ## Adding capabilities to your workspace
 
@@ -61,19 +75,10 @@ Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new
 Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 For this case it would be: `nx build front-final`
 
-## Running unit tests
 
-Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-For this case it would be: `nx test front-final`
 
 Run `nx affected:test` to execute the unit tests affected by a change.
 
-## Running end-to-end tests
-
-Run `ng e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-For this case it would be: `ng e2e front-final`
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
 
 ## Env File
 
